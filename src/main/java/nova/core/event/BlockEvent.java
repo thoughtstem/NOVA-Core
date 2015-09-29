@@ -37,6 +37,10 @@ public abstract class BlockEvent extends CancelableEvent {
 		this.position = position;
 	}
 
+	/**
+	 * A block event called before a BlockFactory is registered.
+	 */
+	//TODO: Move to BlockFactory?
 	public static class Register extends CancelableEvent {
 		public BlockFactory blockFactory;
 
